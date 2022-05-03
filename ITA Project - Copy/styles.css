@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.body{
+    background-image: url('cool-background.png');
+}
+.bg
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.ml{
+    position: absolute;
+    top: 53%;
+    left: 30%;
+}
+
+.ap{
+    position: absolute;
+    top: 20%;
+    left: 47%;
+}
+.mn{
+    position: absolute;
+    top: 60%;
+    left: 45%;
+}
+.mz{
+    position: absolute;
+    top: 75%;
+    left: 40%;
+}
+.tp{
+    position: absolute;
+    top: 75%;
+    left: 33.7%;
+}
+.nl{
+    position: absolute;
+    top: 45%;
+    left: 48.3%;
+}
+.as{
+    position: absolute;
+    top: 42%;
+    left: 40%;
+}
+.sk{
+    position: absolute;
+    top: 70%;
+    left: 30%;
+}
