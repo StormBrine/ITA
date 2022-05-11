@@ -1,14 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Oleo+Script:400|Open+Sans:300,300italic,600,600italic,800");
 
-html, body, div, span, h1, h2, h3, h4, h5, h6, p, b, header{
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;}
-
-	html {
+	.html{
 		box-sizing: border-box;
 	}
 
@@ -16,7 +8,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, b, header{
 		box-sizing: inherit;
 	}
 
-	body {
+	.naga_body {
 		background-color: #edeeed;
 		font-family: 'Open Sans', sans-serif;
 		color: #696969;
@@ -24,7 +16,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, b, header{
 		line-height: 2.25em;
 	}
 
-	h1,h2 {
+	.h1,.h2 {
 		color: #128C7E;
 		font-weight: 800;
 		font-size: 2.25em;
@@ -71,62 +63,37 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, b, header{
 		}
 
 
-	.row {
+	.n_row {
 		display: flex;
 		flex-wrap: wrap;
 		box-sizing: border-box;
 		align-items: stretch;
 	}
 
-		.row > * {
+		.n_row > * {
 			box-sizing: border-box;
 		}
 
-		.row > .col-4 {
+		.n_row > .col-4 {
 			width: 33.33333%;
 		}
-		.row > .col-12 {
+		.n_row > .col-12 {
 			width: 100%;
 		}
 
-		.row {
+		.n_row {
 			margin-top: -40px;
 			margin-left: -40px;
 		}
 
-			.row > * {
+			.n_row > * {
 				padding: 40px 0 0 40px;
 			}
 
-	header {
+	.header {
 		margin: 0 0 2em 0;
 	}
-
-		header h2, header h3 {
-			margin: 0 0 0.25em 0;
-		}
-
-		header p {
-			margin: 0;
-		}
-
-
-	.image {
-		display: inline-block;
-		outline: 0;
-	}
-
-		.image img {
-			display: block;
-			width: 100%;
-			border-radius: 8px;
-		}
-
-		.image.fit {
-			display: block;
-			width: 100%;
-		}
-
+	
 		.image.featured {
 			display: block;
 			width: 100%;
@@ -134,50 +101,35 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, b, header{
 			margin: 0 0 2.5em 0;
 		}
 
-		.image.left {
-			float: left;
-			margin: 0 2em 2em 0;
-		}
-
-		.image.centered {
-			display: block;
-			margin: 0 0 2.5em 0;
-		}
-
-			.image.centered img {
-				margin: 0 auto;
-				width: auto;
-			}
-
-	.box {
+	.nbox {
 		background: #fff;
 		border-radius: 6px;
 		box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.05);
 		padding: 2em;
 	}
 
-		.box.feature {
+		.nbox.feature {
 			padding: 0;
 		}
 
-			.box.feature .inner {
+			.nbox.feature .inner {
 				padding: 4em 2em 3em 2em;
 			}
 
-			.box.feature h2 {
+			.nbox.feature h2 {
 				font-size: 1.35em;
 			}
 
-			.box.feature p {
+			.nbox.feature p {
 				margin: 0;
 			}
 
-			.box.feature .image {
+			.nbox.feature .image {
 				position: relative;
 				margin: 0;
 			}
 
-				.box.feature .image img {
+				.nbox.feature .image img {
 					border-bottom-left-radius: 0;
 					border-bottom-right-radius: 0;
 				}
@@ -190,21 +142,15 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, b, header{
 		padding: 3em 0 3em 0;
 	}
 
-	#main-wrapper {
-		background: #fff;
-		box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.05);
-		padding: 5em 0 5em 0;
-	}
-
 	#header {
 		position: relative;
 	}
 
-	#logo {
+	#nlogo {
 		display: inline-block;
 	}
 
-		#logo h1 {
+		#nlogo h1 {
 			background: #128C7E;
 			color: #fff;
 			font-family: 'Oleo Script', serif;
