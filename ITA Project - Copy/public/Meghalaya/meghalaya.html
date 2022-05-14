@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meghalaya</title>
+    <link rel="icon" href="meg.png">
+    <style>
+        :root{
+        --main:#128C7E;
+        }
+
+    *{
+        font-family: 'Roboto', sans-serif;
+        margin:0; padding:0;
+        box-sizing: border-box;
+        text-decoration: none;
+        outline: none; border:none;
+        transition:all .2s linear;
+    }
+
+    h1, h3{
+        font-family: 'Oswald', sans-serif;
+    }
+
+
+    *::selection{
+        background:var(--main);
+        color:#fff;
+    }
+
+    html{
+        font-size: 62.5%;
+    }
+
+    html::-webkit-scrollbar{
+        width:1.4rem;
+    }
+
+    html::-webkit-scrollbar-track{
+        background:#333;
+    }
+
+    html::-webkit-scrollbar-thumb{
+        background:var(--main);
+    }
+
+    section{
+        min-height: 100vh;
+        padding:1rem 10%;
+        padding-top: 8.5rem;
+    }
+    .gallery .box-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .heading{
+        text-align: center;
+        font-size: 4rem;
+        padding:0 .5rem;
+        color:#333;
+        margin-top: 5px;
+    }
+
+    .heading span{
+        color:var(--main);
+    }
+
+    .gallery .box-container{
+        margin-top:5%;
+    }
+
+    .gallery .box-container .box{
+
+        height:20rem;
+        width:30rem;
+        margin:2rem;
+        cursor: pointer;
+        overflow: hidden;
+        position: relative;
+        border: 5px solid rgb(64, 165, 111);
+        border-radius: 10px;
+    }
+
+    .gallery .box-container .box img{
+        height:100%;
+        width:100%;
+        object-fit: cover;
+    }
+
+    .gallery .box-container .box p{
+        position: absolute;
+        top:100%; left:50%;
+        transform: translate(-50%, -50%);
+        color:#fff;
+        text-align: center;
+        font-size: 2rem;
+        opacity: 0;
+    }
+
+    .gallery .box-container .box label{
+        font-size: 2em;
+        background: rgb(22, 22, 22);
+        color: #1bc3af;
+        padding: 10px;
+    }
+
+
+    .gallery .box-container .box:hover p{
+        top:50%;
+        opacity: 1;
+        transition-delay: .2s;
+    }
+
+    .gallery .box-container .box::before{
+        content: '';
+        position: absolute;
+        top:-100%; left:0;
+        height:100%;
+        width: 100%;
+        background:rgba(0,0,0,.7);
+        transition:.2s linear;
+    }
+
+    .gallery .box-container .box:hover::before{
+        top:0;
+    }
+
+    .anime{
+			position: relative;
+			top: 20%;
+		}
+    .line1{
+        position: absolute;
+        left: 0;
+        top: .009px;
+        height: 10px;
+        background: #333;
+        animation: a 6s 1s infinite linear;
+    }
+    .line2{
+        position: absolute;
+        right: 0;
+        top: 50px;
+        height: 10px;
+        background: #128C7E;
+        animation: a 6s 1s infinite linear;
+    }
+    .line3{
+        position: absolute;
+        right: 0;
+        top: .009px;
+        height: 10px;
+        background: #128C7E;
+        animation: a 6s 1s infinite linear;
+    }
+    .line4{
+        position: absolute;
+        left: 0;
+        top: 50px;
+        height: 10px;
+        background: #333;
+        animation: a 6s 1s infinite linear;
+    }
+    @keyframes a{
+			0%{
+				width: 0%;
+			}
+			100%{
+        width: 100%;
+        /*opacity: 0*/;
+      }
+    }
+    </style>
+</head>
+<body>
+    <div style="background: #333">
+        <div class="logo" style="display: block; margin-left: auto; margin-right: auto; width: 20%;">
+            <img src="meglogo.png" alt="Meghalaya Map" height="100px">
+        </div>
+    </div>
+    
+    <section class="gallery" id="gallery">
+        <div class="anime">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+            <div class="line4"></div>
+        </div>
+        <h1 class="heading"> Meghalayan <span>Cuisines</span> </h1>
+        
+        <div class="box-container">
+        
+            <div class="box" data-aos="fade-up">
+                <label>Do'o Kappa</label>
+                <img src="kappa.jpg" alt="">
+                <p>This indigenous Garo Chicken dish, uses no oil, it is cooked using cooking soda with green herbs.</p>
+            </div>
+        
+            <div class="box" data-aos="fade-up">
+                <label>Jadoh</label>
+                <img src="jadoh.jpg" alt="">
+                <p>Khasi rice dish made with chunks of pork organs and pork blood</p>
+            </div>
+        
+            <div class="box" data-aos="fade-up">
+                <label>Tungrymbai</label>
+                <img src="tungrymbai.jpg" alt="">
+                <p>A Khasi fermented soyabean paste which is pungent but tastes good!</p>
+            </div>
+        
+            <div class="box" data-aos="fade-up">
+                <label>Dohkhlieh</label>
+                <img src="dohkhlieh.jpg" alt="">
+                <p>A meat salad consisting of organs from the pig's head, from brains to toungue to nose to ears!</p>
+            </div>
+        
+            <div class="box" data-aos="fade-up">
+                <label>Dohjem</label>
+                <img src="dohjem.jpg" alt="">
+                <p>Pork delicacy made from pig's innards with black sesame seeds</p>
+            </div>
+        
+            <div class="box" data-aos="fade-up">
+                <label>Dohsnam</label>
+                <img src="dohsnam.jpg" alt="">
+                <p>Pork intestine filled with pork blood and other spices mixed</p>
+            </div>
+        
+        </div>
+        </section>
+</body>
+</html>
