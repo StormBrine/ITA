@@ -122,6 +122,7 @@
 
 			.nbox.feature p {
 				margin: 0;
+				text-align: justify;
 			}
 
 			.nbox.feature .image {
