@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="icon" href="Images/nelogo.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+  </head>
+  <body style="background-image: url('ziro.jpg');">
+      <form class="login-form" method="post">
+		  <div class="logo">
+			</div>
+			<h1>NE Cuisines</h1>
+        <h2>Login</h2>
+
+        <div class="txtb">
+          <input type="text" name="uname" >
+          <span data-placeholder="Username"></span>
+        </div>
+
+        <div class="txtb">
+          <input type="password" name="passwd">
+          <span data-placeholder="Password"></span>
+        </div>
+
+        <input type="button" class="logbtn" name="login" value="Login" onclick="log()">
+
+      </form>
+      <script type="text/javascript">
+        $(".txtb input").on("focus",function(){
+            $(this).addClass("focus");
+        });
+
+        $(".txtb input").on("blur",function(){
+            if($(this).val() == "")
+            $(this).removeClass("focus");
+        });
+
+
+        function log(){
+            var n = document.getElementsByName("uname")[0].value;
+            var p = document.getElementsByName("passwd")[0].value;
+            if(n=='' || p=='')
+            {
+                alert('Field(s) cannot be empty!!!');
+            }
+            else if (n=='Group5' && p=="admin")
+            {
+                location.href = "meghalaya.html";
+            }
+            else
+            {
+                alert('Wrong Credentials bruh!');
+            }
+        }
+
+      </script>
+
+  </body>
+</html>
